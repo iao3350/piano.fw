@@ -1,0 +1,377 @@
+:root {
+    --cream: #FFF6E0;
+    --apricot: #F4A261;
+    --apricot-dark: #E8894A;
+    --lavender: #C3B5E3;
+    --lavender-light: #C3B5E366;
+    --lavender-dark: #7B6A9E;
+    --sage: #9CC5A1;
+    --brown: #5A4636;
+    --sage-light: #9CC5A14D;
+}
+
+body {
+    color: var(--brown);
+    font-family: "Zen Maru Gothic", sans-serif;
+    background-color: var(--cream);
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 27px 16px;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 17px;
+    justify-content: center;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--lavender-dark);
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.header-btn {
+    background-color: var(--apricot-dark);
+    text-decoration: none;
+    color: white;
+    padding: 10px 35px;
+    font-size: 14px;
+    border-radius: 10px;
+    font-weight: 700;
+
+}
+
+.header-info h1 {
+    font-size: 20px;
+    margin: 3px 0;
+    font-weight: 700;
+}
+
+.header-info p {
+    font-size: 10px;
+    margin: 3px 0;
+    font-weight: 500;
+}
+
+.header-info a {
+    text-decoration: none;
+    color: var(--lavender-dark);
+    font-weight: 500;
+}
+
+.hero-visual {
+    position: relative;
+    display: flow-root;
+}
+
+.blob {
+    position: absolute;
+}
+
+.blob-lavender {
+    left: 12px;
+}
+
+.blob-orange {
+    left: 138px;
+}
+
+.blob-green {
+    left: 61px;
+    top: 100px;
+}
+
+.hero-image {
+    position: relative;
+    display: block;
+    height: 222px;
+    width: 246px;
+    margin: 31px auto 0;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-copy {
+    margin-top: 45px;
+    font-weight: 700;
+    font-size: 27px;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    background-color: var(--apricot-dark);
+    padding: 15px 40px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.hero-sub {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.profile-photo img {
+    object-fit: cover;
+    width: 132px;
+}
+
+.profile-photo {
+    float: right;
+    margin-left: 19px;
+    margin-right: 21px;
+}
+
+.about {
+    background-color: var(--sage-light);
+    padding: 35px 16px;
+}
+
+.wave {
+    display: block;
+    width: 100%;
+}
+
+.profile-role {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 3px 0;
+}
+
+.profile-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 3px 0;
+}
+
+.profile-text {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.lesson-list {
+    margin: 50px 13px 0 13px;
+}
+
+.lesson-card {
+    background-color: white;
+    padding: 9px 20px 20px 20px;
+    text-align: center;
+    margin: 22px 0;
+    border-radius: 40px;
+}
+
+.lesson-card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--apricot);
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.lesson-card p {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.first-text {
+    display: inline-block;
+    text-align: left;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--lavender-light);
+    padding: 8px 22px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.price {
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.price-card {
+    padding: 17px 59px 13px 43px;
+    margin: 20px;
+}
+
+.price-text {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.price-text p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.price-note {
+    margin: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 17px 25px 20px 25px;
+}
+
+.price-note h3 {
+    border-bottom: 5px solid var(--sage);
+    width: 255px;
+    margin: 0 auto 24px;
+    padding-bottom: 5px;
+}
+
+.price-note p {
+    text-align: left;
+    margin: 0 0 24px;
+}
+
+.price-visual {
+    position: relative;
+    height: 350px;
+}
+
+.price-blob1 {
+    left: 8px;
+    top: 10px;
+}
+
+.price-blob2 {
+    left: 140px;
+    top: 100px;
+}
+
+.price-photo1 {
+    height: 157.68px;
+    width: 187.09px;
+    position: absolute;
+    left: 25px;
+    top: 40px;
+}
+
+.price-photo2 {
+    height: 176.41px;
+    width: 193.9px;
+    position: absolute;
+    left: 160.5px;
+    top: 117px;
+}
+
+.access {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.map {
+    margin: 30px 0;
+    height: 195px;
+    width: 276px;
+}
+
+.access-text {
+    display: flex;
+    margin-left: 50px;
+    gap: 17px;
+}
+
+.address {
+    text-align: left;
+}
+
+.access-text p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.address p {
+    font-weight: 500;
+}
+
+.contact {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.contact p {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--lavender-dark);
+    font-weight: 700;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+
+.contact-links p {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--sage);
+    border-radius: 20px;
+}
+
+.contact-links p a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.insta img {
+    width: 100px;
+}
+
+.insta p {
+    padding: 5px 12px;
+}
+
+.line img {
+    width: 100px;
+}
+
+.line p {
+    padding: 5px 31px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 30px;
+}
