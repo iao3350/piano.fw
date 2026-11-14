@@ -398,6 +398,9 @@ footer {
 
 .trial-card h1 {
     font-size: 25px;
+    border-bottom: 5px solid var(--sage);
+    width: 310px;
+    margin: 0 auto 30px;
 }
 
 .trial-card label {
@@ -414,6 +417,9 @@ footer {
 
 .trial-card input, .trial-card select {
     margin-bottom: 20px;
+    border: 1px solid var(--lavender);
+    border-radius: 5px;
+    padding: 6px;
 }
 
 .trial-btn {
