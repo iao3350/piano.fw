@@ -389,6 +389,46 @@ footer {
     display: none;
 }
 
+.trial-card {
+    width: 85%;
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.trial-card h1 {
+    font-size: 25px;
+}
+
+.trial-card label {
+    display: block;
+    text-align: center;
+    margin: 10px 0 5px 0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.trial-card p {
+    margin-bottom: 40px;
+}
+
+.trial-card input, .trial-card select {
+    margin-bottom: 20px;
+}
+
+.trial-btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    color: white;
+    background-color: var(--apricot-dark);
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-family: inherit;
+    font-weight: 700;
+    border: none;
+    margin: 30px auto 50px ;
+}
 
 
 @media (min-width: 768px) {

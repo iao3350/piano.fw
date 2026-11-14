@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>体験レッスン</title>
+    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card trial-card">
+        <h1 class="trial-title">体験レッスンのお申し込み</h1>
+            <p>必要事項を入力してください。<br>折り返しご連絡いたします！</p>
+            <form id="trial-form" action="" method="POST">
+            <input type="hidden" name="_subject" value="体験レッスンのお申し込み">
+            <label for="name">お名前</label>
+                <input type="text" id="name" name="お名前" required>
+            <label for="tel">電話番号</label>
+                <input type="tel" id="tel" name="電話番号" required>
+            <label for="email">メールアドレス（任意）</label>
+                <input type="email" id="email" name="email">
+                <label for="age">ご年齢</label>
+                <input type="text" id="age" name="ご年齢" placeholder="例：5歳、小学4年生、大人" required>
+                <label for="day">希望曜日</label>
+                <select id="day" name="希望曜日">
+                    <option value="">選択してください</option>
+                    <option value="monday">月曜日</option>
+                    <option value="tuesday">火曜日</option>
+                    <option value="wednesday">水曜日</option>
+                    <option value="thursday">木曜日</option>
+                    <option value="friday">金曜日</option>
+                    <option value="saturday">土曜日</option>
+            </select>
+
+            <label for="time">希望時間</label>
+                <select id="time" name="希望時間">
+                    <option value="">選択してください</option>
+                </select>
+            <button type="submit" class="trial-btn">体験レッスンを申し込む</button>
+            </form>
+            
+    </div>
+
+    <div class="result-card">
+    <p id="result"></p>
+    </div>
+
+    <script src="trial.js"></script>
+</body>
+</html>
