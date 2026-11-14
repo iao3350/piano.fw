@@ -32,10 +32,10 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 17px;
+    gap: 13px;
     justify-content: center;
     background-color: white;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 15px;
     margin-top: 7px;
     margin-bottom: 0;
@@ -45,7 +45,7 @@ nav a {
     text-decoration: none;
     color: var(--lavender-dark);
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .header-btn {
@@ -133,6 +133,7 @@ nav a {
     font-size: 15px;
     font-weight: 500;
     margin-top: 40px;
+    text-align: center;
 }
 
 .profile-photo img {
@@ -162,15 +163,24 @@ nav a {
     margin: 3px 0;
 }
 
+.profile {
+    display: flow-root;
+}
+
 .profile-name {
     font-size: 18px;
     font-weight: 700;
     margin: 3px 0;
 }
 
+.profile-name-pc {
+    display: none;
+}
+
 .profile-text {
     font-size: 12px;
     font-weight: 500;
+    display: flow-root;
 }
 
 .lesson-list {
@@ -197,12 +207,10 @@ nav a {
     font-size: 13px;
     font-weight: 500;
     margin: 0;
-}
-
-.first-text {
-    display: inline-block;
+     display: inline-block;
     text-align: left;
 }
+
 
 .section-title {
     font-size: 18px;
@@ -270,23 +278,23 @@ nav a {
 }
 
 .price-blob2 {
-    left: 140px;
-    top: 100px;
+    left: 128px;
+    top: 90px;
 }
 
 .price-photo1 {
-    height: 157.68px;
-    width: 187.09px;
+    height: 150.68px;
+    width: 180.09px;
     position: absolute;
     left: 25px;
     top: 40px;
 }
 
 .price-photo2 {
-    height: 176.41px;
-    width: 193.9px;
+    height: 170.41px;
+    width: 185.9px;
     position: absolute;
-    left: 160.5px;
+    left: 150.5px;
     top: 117px;
 }
 
@@ -375,4 +383,349 @@ nav a {
 footer {
     text-align: center;
     margin-bottom: 30px;
+}
+
+.pc-br {
+    display: none;
+}
+
+
+
+@media (min-width: 768px) {
+    header {
+        max-width: 1250px;
+        margin: 0 auto;
+        padding: 60px 95px 0;
+    }
+
+    .header-info h1 {
+        font-size: 40px;
+    }
+    .header-info {
+        display:flex;
+        gap: 35px;
+        align-items: center;
+    }
+
+    .header-pc p{
+        font-size: 18px;
+    }
+
+    .header-btn {
+        font-size: 30px;
+        padding: 25px 42px;
+        border-radius: 40px;
+    }
+
+    nav a {
+        font-size: 28px;
+    }
+
+    nav {
+        position: relative;
+        z-index: 1;
+    }
+
+    nav ul {
+        gap: 100px;
+        padding: 22px 60px;
+        border-radius: 40px;
+        margin: 27px 0;
+    }
+
+    .blob-lavender {
+       left: 175px;
+       top: -140px; 
+    }
+
+    .blob-green {
+       left: -180px;
+       top: -150px;
+    }
+
+    .blob-orange {
+        left: 70px;
+        top: 180px;
+    }
+
+    .hero-image {
+        width: 679px;
+        height: 538px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1250px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    .hero-copy {
+        font-size: 60px;
+        text-align: left;
+    }
+
+    .hero-btn {
+        font-size: 35px;
+        padding: 48px 37px;
+        border-radius: 60px;
+    }
+
+    .hero-text {
+        text-align: left;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-sub {
+        font-size: 30px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .hero-sub br {
+        display: none;
+    }
+
+    .about-inner {
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+
+    .profile-photo {
+        float: left;
+        margin-right: 130px;
+    }
+
+    .profile-photo img {
+        height: 383px;
+        width: 319px;
+    }
+
+    .profile-text {
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 590px;
+    }
+
+    .profile-name-pc {
+        display: block;
+    }
+
+    .profile-photo p {
+        display: none;
+    }
+
+    .profile-role {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .profile-name {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .profile {
+        max-width: 1040px;
+        margin: 0 auto;
+    }
+
+    .lesson-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 198px;
+    }
+
+    .lesson-card {
+        width: 472px;
+        padding: 40px 40px;
+        box-sizing: border-box;
+    }
+
+    .lesson-card h3 {
+        font-size: 25px;
+        margin-bottom: 27px;
+    }
+
+    .lesson-card p {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .pc-br {
+        display: inline;
+    }
+
+    .about {
+        padding: 120px 0;
+    }
+    
+    .price {
+        max-width: 1250px;
+        margin: 150px auto 100px;
+    }
+
+    .section-title {
+        font-size: 30px;
+        padding: 30px 60px;
+        border-radius: 50px;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    .price-card {
+        width: 690px;
+        box-sizing: border-box;
+        margin: 0 auto 60px;
+        padding: 75px 78px 30px 78px;
+        border-radius: 50px;
+    }
+
+    .price-card p {
+        font-size: 25px;
+        gap: 95px;
+        padding-bottom: 40px;
+    }
+
+    .price-note {
+        width: 1000px;
+        margin: 0 auto 10px;
+        box-sizing: border-box;
+        border-radius: 50px;
+    }
+
+    .price-note h3 {
+        font-size: 30px;
+        width: 462px;
+        margin-bottom: 60px;
+    }
+
+    .price-note p {
+        width: 805px;
+        margin: 0 auto 30px;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .price-note p br {
+        display: none;
+    }
+
+    .price-photo1 {
+        height: 500px;
+        width: 531px;
+        top: 130px;
+        left: 60px; 
+    }
+
+    .price-photo2 {
+        height: 510px;
+        width: 550px;
+        left: 600px;
+        top: 230px;
+    }
+
+    .price-blob1 {
+        height: 662.6px;
+        width: 696px;
+        left: -50px;
+    }
+
+    .price-blob2 {
+        height: 662.4px;
+        width: 699px;
+        left: 550px;
+        top: 170px;
+    }
+
+    .price-visual {
+        max-width: 1250px;
+        margin: 0 auto;
+        padding-bottom: 450px;
+    }
+
+    .access-inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .map {
+        margin: 30px 0;
+        height: 418px;
+        width: 591px;
+    }
+
+    .access-text p {
+        font-size: 27px;
+        text-align: left;
+    }
+
+    .address p {
+        font-size: 24px;
+    }
+
+    .access-text {
+        flex-direction: column;
+    }
+
+    .access {
+        margin-bottom: 150px;
+    }
+
+    .insta img {
+        width: 150px;
+    }
+
+    .line img {
+        width: 150px;
+    }
+
+    .insta p {
+        font-size: 28px;
+        padding: 13px 60px;
+        border-radius: 40px;
+    }
+
+    .line p {
+        font-size: 28px;
+        padding: 13px 88px;
+        border-radius: 40px;
+    }
+
+    .contact-links {
+        width: 727px;
+        gap: 160px;
+        margin: 50px auto;
+    }
+
+    .contact p {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .contact p br {
+        display: none;
+    }
+
+    .contact {
+        margin-bottom: 200px;
+    }
+
+    fotter {
+        font-size: 20px;
+        margin: 50px 0;
+    }
+
+
+
 }
